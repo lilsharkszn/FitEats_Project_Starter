@@ -1,0 +1,78 @@
+<!-- dinner.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitEats - Dinner</title>
+    <link rel="stylesheet" href="/FitEats_Project_Starter/style.css" />
+  </head>
+  <body>
+    <!-- Header with Logo -->
+    <header class="site-header">
+      <img
+        src="/FitEats_Project_Starter/css assets/assets/photox.jpeg"
+        alt="FitEats Logo"
+        class="logo"
+      />
+      <h1>Dinner Menu</h1>
+    </header>
+    <!-- Navigation -->
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="checkout.html">Checkout</a> <a href="delivery.html">Delivery</a>
+      <a href="admin.html">Admin Account</a>
+      <a href="landing.html">Logout</a>
+    </nav>
+    <!-- Dinner Meal Cards -->
+    <section  class="meal-section">
+      <h2>End Your Day Right</h2>
+      <div class="meal-grid">
+        <div class="meal-card">
+          <img
+            src="/FitEats_Project_Starter/images/salmonveggies.jpg"
+            alt="Baked Salmon"
+          />
+          <h3>Baked Salmon</h3>
+          <p>
+            Omega-rich salmon with roasted vegetables and sweet potato mash.
+          </p>
+          <button class="add-to-cart" data-meal="Baked Salmon">
+            Add to Cart
+          </button>
+        </div>
+        <div class="meal-card">
+          <img
+            src="/FitEats_Project_Starter/images/veggiestirfry.jpg"
+            alt="Veggie Stir-Fry"
+          />
+          <h3>Veggie Stir-Fry</h3>
+          <p>
+            Fresh seasonal vegetables sautéed in a light soy-ginger sauce over
+            rice.
+          </p>
+          <button class="add-to-cart" data-meal="Veggie Stir-Fry">
+            Add to Cart
+          </button>
+        </div>
+        <div class="meal-card">
+          <img
+            src="/FitEats_Project_Starter/images/chickencurry.jpg"
+            alt="Lean Chicken Curry"
+          />
+          <h3>Lean Chicken Curry</h3>
+          <p>
+            Lean chicken in a light curry sauce with quinoa and steamed spinach.
+          </p>
+          <button class="add-to-cart" data-meal="Lean Chicken Curry">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>&copy; 2025 FitEats. All rights reserved.</footer>
+    <script src="/FitEats_Project_Starter/script.js"></script>
+    <script src="/FitEats_Project_Starter/loadmeals.js"></script>
+  </body>
+</html>

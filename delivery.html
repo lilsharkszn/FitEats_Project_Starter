@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery Details - FitEats</title>
+    <link rel="stylesheet" href="/FitEats_Project_Starter/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="/FitEats_Project_Starter/css assets/assets/photox.jpeg"
+        alt="FitEats Logo"
+        class="logo"
+      />
+      <h1>Delivery Information</h1>
+    </header>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="cart.html">Cart</a> <a href="checkout.html">Checkout</a>
+      <a href="login.html">Logout</a> <a href="admin.html">Admin Account</a>
+    </nav>
+    <main class="checkout-container">
+      <h2>Set Your Delivery Preferences</h2>
+      <form>
+        <label for="address">Delivery Address:</label><br />
+        <input
+          type="text"
+          id="address"
+          name="address"
+          required
+          style="width: 100%; margin-bottom: 1rem"
+        /><br />
+        <label for="date">Select Date:</label><br />
+        <input
+          type="date"
+          id="date"
+          name="date"
+          required
+          style="width: 100%; margin-bottom: 1rem"
+        /><br />
+        <label for="time">Select Time:</label><br />
+        <input
+          type="time"
+          id="time"
+          name="time"
+          required
+          style="width: 100%; margin-bottom: 1.5rem"
+        /><br />
+        <button type="submit">Confirm Delivery</button>
+      </form>
+    </main>
+    <footer>&copy; 2025 FitEats. All rights reserved.</footer>
+  </body>
+</html>

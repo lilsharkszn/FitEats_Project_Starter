@@ -1,0 +1,1 @@
+// JS for main app (login, signup, cart, etc.)

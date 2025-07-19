@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - FitEats</title>
+    <link rel="stylesheet" href="/FitEats_Project_Starter/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="/FitEats_Project_Starter/css assets/assets/photox.jpeg"
+        alt="FitEats Logo"
+        class="logo"
+      />
+      <h1>Admin Panel</h1>
+    </header>
+    <nav>
+      <a href="admin.html">Home</a> 
+      <a href="login.html">Switch to User</a> 
+      <a href="index.html">Logout</a>
+      
+      
+    </nav>
+    <main class="form-container">
+      <h2>Add New Meal</h2>
+      <form id="adminMealForm">
+        <label for="mealName">Meal Name</label>
+        <input type="text" id="mealName" required />
+        <label for="mealType">Meal Type</label>
+        <select id="mealType">
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+        </select>
+        <label for="mealCalories">Calories</label>
+        <input type="number" id="mealCalories" required />
+        <label for="mealImage">Image URL</label>
+        <input type="url" id="mealImage" required />
+        <button type="submit">Add Meal</button>
+      </form>
+    </main>
+    <footer>&copy; 2025 FitEats. All rights reserved.</footer>
+    <script src="/FitEats_Project_Starter/admin.js"></script>
+  </body>
+</html>

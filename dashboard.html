@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - FitEats</title>
+    <link rel="stylesheet" href="/FitEats_Project_Starter/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="/FitEats_Project_Starter/css assets/assets/photox.jpeg"
+        alt="FitEats Logo"
+        class="logo"
+      />
+      <h1>Your Dashboard</h1>
+    </header>
+    <nav>
+    <a href="dashboard.html">Home</a>
+    <a href="breakfast.html">Breakfast</a>
+    <a href="lunch.html">Lunch</a>
+    <a href="dinner.html">Dinner</a>
+    <a href="goals.html">Goals</a>
+    <a href="delivery.html">Delivery</a>
+    <a href="admin.html">Admin Account</a>
+    <a href="cart.html">Cart</a>
+    <a href="index.html">Logout</a>
+    </nav>
+    <main>
+      <section>
+        <h2 style="text-align: center">
+          Welcome, <span id="username">User</span> 👋
+        </h2>
+        <ul class="dashboard-list">
+          <li>💪 Fitness Goal: <strong id="goal">Not Set</strong></li>
+          <li>🥗 Selected Meals: <strong id="meal-count">0</strong></li>
+          <li>
+            🚚 Delivery Address:
+            <strong id="delivery-address">Not Provided</strong>
+          </li>
+          <li>
+            🗓️ Scheduled Delivery:
+            <strong id="delivery-date">Not Scheduled</strong>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>&copy; 2025 FitEats. All rights reserved.</footer>
+    <script>
+      // Populate user data from localStorage const user = JSON.parse(localStorage.getItem('fiteats_user')) || { name: 'User' }; document.getElementById('username').textContent = user.name; const goal = localStorage.getItem('fitness_goal') || 'Not Set'; document.getElementById('goal').textContent = goal; const meals = JSON.parse(localStorage.getItem('cart')) || []; document.getElementById('meal-count').textContent = meals.length; const delivery = JSON.parse(localStorage.getItem('delivery_info')) || {}; document.getElementById('delivery-address').textContent = delivery.address || 'Not Provided'; document.getElementById('delivery-date').textContent = delivery.date || 'Not Scheduled';
+    </script>
+  </body>
+</html>

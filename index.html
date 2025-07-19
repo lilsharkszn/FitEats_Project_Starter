@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitEats – Eat Healthy</title>
+  <link rel="stylesheet" href="/FitEats_Project_Starter/landingstyle.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Slideshow background -->
+  <div class="slideshow-container"></div>
+
+  <!-- Button overlay -->
+  <div class="overlay">
+    <a class="enter-btn" href="landing.html">Enter FitEats</a>
+  </div>
+
+  <!-- Welcome text -->
+  <div class="welcome-text">
+    <h2 class="welctitle">Welcome to FitEats</h2>
+    <h3 class="h3">Order your factor health meals now!</h3>
+  </div>
+
+  <!-- Optional: JS for preloader fade out -->
+  <script>
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      preloader.style.pointerEvents = "none";
+      setTimeout(() => preloader.style.display = "none", 600);
+    });
+  </script>
+  <!--<script src="./js/landing.js"></script>*/-->
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - FitEats</title>
+    <link rel="stylesheet" href="/FitEats_Project_Starter/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="/FitEats_Project_Starter/css assets/assets/photox.jpeg"
+        alt="FitEats Logo"
+        class="logo"
+      />
+      <h1>Checkout</h1>
+    </header>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="cart.html">Cart</a> <a href="delivery.html">Delivery</a>
+      <a href="admin.html">Admin Account</a> <a href="index.html">Logout</a>
+    </nav>
+    <main class="checkout-container">
+      <h2>Order Summary</h2>
+      <div class="cart-summary" id="checkout-summary">
+        <!-- JavaScript will populate selected meals -->
+        <p>No items in your cart yet.</p>
+      </div>
+      <h3>Payment Method</h3>
+      <form>
+        <label>
+          <input type="radio" name="payment" value="card" required />
+          Credit/Debit Card </label
+        ><br />
+        <label>
+          <input type="radio" name="payment" value="transfer" required /> Bank
+          Transfer </label
+        ><br /><br />
+        <button type="submit">Place Order</button>
+      </form>
+    </main>
+    <footer>&copy; 2025 FitEats. All rights reserved.</footer>
+    <script>
+      // Dummy script to populate checkout summary from localStorage cart const checkoutSummary = document.getElementById('checkout-summary'); const cartItems = JSON.parse(localStorage.getItem('cart')) || []; if (cartItems.length > 0) { checkoutSummary.innerHTML = ''; cartItems.forEach(item => { const p = document.createElement('p'); p.className = 'cart-item'; p.textContent = ${item.name} - ₦${item.price}; checkoutSummary.appendChild(p); }); }
+    </script>
+  </body>
+</html>
+

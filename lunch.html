@@ -1,0 +1,73 @@
+<!-- lunch.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitEats - Lunch Meals</title>
+  <link rel="stylesheet" href="/FitEats_Project_Starter/style.css" />
+</head>
+<body>
+  <header class="site-header">
+      <img
+        src="/FitEats_Project_Starter/css assets/assets/photox.jpeg"
+        alt="FitEats Logo"
+        class="logo"
+      />
+  </header>
+
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="breakfast.html">Breakfast</a>
+    <a href="dinner.html">Dinner</a>
+    <a href="cart.html">Cart</a>
+    <a href="admin.html">Admin Account</a>
+    <a href="landing.html">Logout</a>
+  </nav>
+
+  <section class="hero" class="meal-section">
+    <h2>Lunch Options</h2>
+    <p style="text-align: center;">Power your afternoon with clean and satisfying meals</p>
+  </section>
+
+  <section class="meal-section">
+    <div class="meal-card">
+      <img src="https://source.unsplash.com/featured/?grilled,chicken" alt="Grilled Chicken Bowl">
+      <div class="content">
+        <h4>Grilled Chicken Bowl</h4>
+        <p>Calories: 550 kcal</p>
+        <p>Macros: 40g P / 35g C / 18g F</p>
+        <button class="add-to-cart" data-name="Grilled Chicken Bowl" data-price="9.99">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="meal-card">
+      <img src="https://source.unsplash.com/featured/?pasta,healthy" alt="Lean Pasta Mix">
+      <div class="content">
+        <h4>Lean Pasta Mix</h4>
+        <p>Calories: 500 kcal</p>
+        <p>Macros: 28g P / 55g C / 10g F</p>
+        <button class="add-to-cart" data-name="Lean Pasta Mix" data-price="8.99">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="meal-card">
+      <img src="https://source.unsplash.com/featured/?tofu,salad" alt="Tofu Quinoa Salad">
+      <div class="content">
+        <h4>Tofu Quinoa Salad</h4>
+        <p>Calories: 480 kcal</p>
+        <p>Macros: 22g P / 45g C / 15g F</p>
+        <button class="add-to-cart" data-name="Tofu Quinoa Salad" data-price="8.49">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 FitEats. All rights reserved.
+  </footer>
+
+  <script src="/FitEats_Project_Starter/script.js"></script>
+  <script src="/FitEats_Project_Starter/loadmeals.js"></script>
+
+</body>
+</html>
